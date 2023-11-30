@@ -12,7 +12,6 @@ app.get('/', (req, res) => {
 
 app.post('/api/example', function(req, res){
     res.json('example');
-    console.log(req.body.data.data);
 });
 
 http.listen(3000, () => {
