@@ -4,9 +4,10 @@ body {
   display: flex;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #ffffff;
+  overflow: hidden;
 }
   
-/* .ellipse-9 {
+.ellipse-9 {
   border: 33px solid #d3ff71;
   border-radius: 50%;
   width: 700px;
@@ -51,7 +52,7 @@ body {
   position: absolute;
   left: 828px;
   top: -28px;
-} */
+}
 
 .avtorizacia {
   width: 100vw;
@@ -68,6 +69,7 @@ body {
   align-items: center;
   flex-direction: column;
   border-radius: 27px;
+  z-index: 1;
 }
 
 .voiti {
@@ -85,38 +87,74 @@ body {
   border: 0;
   font-size: 16px;
   cursor: pointer;
-  margin: 50px;
+  margin: 40px;
+  background-color: #333333;
+  color: #ffffff80;
 }
 
-.shcola {
+.shcola{
   width: 300px;
   height: 50px;
   border-radius: 25.5px;
   border: 0;
   font-size: 16px;
   cursor: pointer;
+  background-color: #333333;
+  color: #ffffff80;
 }
 
 .option-category {
   cursor: pointer;
   width: 300px;
   height: 50px;
-  background-color: rgba(255, 217, 0, 0.5);
 }
 
 .option {
   cursor: pointer;
 }
 
-.prodoljit {
+.prodoljit, .vhod {
   cursor: pointer;
   width: 250px;
   height: 50px;
   border-radius: 25.5px;
   border: 0;
-  background-color: #14ff00;
+  background-color: #15ff00;
   color: #ffffff;
   font-size: 24px;
   font-weight: 500;
-  margin: 50px;
+  margin: auto;
+  transition: .5s;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	display: none;
+}
+
+.login {
+  width: 300px;
+  height: 50px;
+  border-radius: 25.5px;
+  border: 0;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #333333;
+  color: #ffffff;
+  margin: 40px;
+  cursor: text;
+  display: none;
+}
+
+.parol {
+  width: 300px;
+  height: 50px;
+  border-radius: 25.5px;
+  border: 0;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #333333;
+  color: #ffffff;
+  cursor: text;
+  display: none;
 }
