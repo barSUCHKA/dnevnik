@@ -2,11 +2,11 @@ body {
   margin: 0;
   background: #333333;
   display: flex;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #ffffff;
   overflow: hidden;
 }
-  
+
 .ellipse-9 {
   border: 33px solid #d3ff71;
   border-radius: 50%;
@@ -92,7 +92,7 @@ body {
   color: #ffffff80;
 }
 
-.shcola{
+.shcola {
   width: 300px;
   height: 50px;
   border-radius: 25.5px;
@@ -113,7 +113,8 @@ body {
   cursor: pointer;
 }
 
-.prodoljit, .vhod {
+.prodoljit,
+.vhod {
   cursor: pointer;
   width: 250px;
   height: 50px;
@@ -124,12 +125,12 @@ body {
   font-size: 24px;
   font-weight: 500;
   margin: auto;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
-	display: none;
+  display: none;
 }
 
 .login {
@@ -144,6 +145,7 @@ input[type="number"]::-webkit-inner-spin-button {
   margin: 40px;
   cursor: text;
   display: none;
+  padding: 0;
 }
 
 .parol {
@@ -157,4 +159,82 @@ input[type="number"]::-webkit-inner-spin-button {
   color: #ffffff;
   cursor: text;
   display: none;
+  padding: 0;
+}
+
+header {
+  height: 100px;
+  width: 100vw;
+  background-color: #3f3f3f;
+  border-radius: 0 0 0 27px;
+  display: flex;
+  z-index: 1;
+}
+
+.lichniy-kabinet {
+  display: flex;
+  flex-direction: row;
+  margin: auto 0 0 55px;
+  cursor: pointer;
+}
+
+.chel-icon {
+  margin-right: 20px;
+}
+
+.name-login {
+  color: #fff;
+  text-align: center;
+  font-family: Calibri;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.el-dnevnik-title {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.logo {
+  margin: auto 16px auto auto;
+}
+
+.el-dnevnik {
+  color: #fff;
+  text-align: center;
+  font-family: Calibri;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.kol-nastroiki {
+  display: flex;
+  flex-direction: row;
+  margin: auto 55px auto 0;
+}
+
+.kol {
+  margin: auto 37px auto 0;
+  cursor: pointer;
+}
+
+.nastroiki {
+  color: #fff;
+  text-align: center;
+  font-family: Calibri;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.nastroiki-icon {
+  margin: auto 0 auto 10px;
+  cursor: pointer;
 }
