@@ -1,13 +1,8 @@
 import { useState, useEffect } from "react";
 
-export const MainPage = () => {
+export const OcenkiPage = () => {
   return (
     <>
-      {/* <div className="ellipse-9"></div>
-      <div className="ellipse-6"></div>
-      <div className="ellipse-8"></div>
-      <div className="ellipse-7"></div>
-      <div className="ellipse-10"></div> */}
       <header>
         <div className="lichniy-kabinet">
           <svg
@@ -118,33 +113,244 @@ export const MainPage = () => {
           </svg>
         </div>
       </header>
-      <div className="bloki">
-        <div
-          className="blok-ocenki"
-          onClick={() => {
-            window.location.assign("ocenki");
-          }}
-        >
-          <p className="ocenki-text">Оценки</p>
+      <div className="ocenki-settings">
+        <div className="tekycie-itogovie">
+          <div className="tekycie">
+            <p className="tekycie-text">Текущие</p>
+          </div>
+          <div className="itogovie">
+            <p className="itogovie-text">Итоговые</p>
+          </div>
         </div>
-        <div
-          className="blok-domzadrasp"
-          onClick={() => {
-            window.location.assign("domzadrasp");
-          }}
-        >
-          <p className="domzadrasp-text">
-            Домашнее задание / <br></br> Расписание
-          </p>
+        <select className="ocenki-data">
+          <option>1 четверть</option>
+          <option>2 четверть</option>
+          <option>1 полугодие</option>
+          <option>3 четверть</option>
+          <option>4 четверть</option>
+          <option>2 полугодие</option>
+        </select>
+      </div>
+      <div className="ocenki-main">
+        <div className="ocenki-row">
+          <div className="ocenki-predmet">
+            <p className="ocenki-predmet-text">Предмет</p>
+          </div>
+          <div className="ocenki-sredbal-5">
+            <p className="ocenki-sredbal-text">5.00</p>
+          </div>
+          <div className="ocenki-mass">
+            <div className="ocenka-5">
+              <p className="ocenka-text">5</p>
+            </div>
+            <div className="ocenka-5">
+              <p className="ocenka-text">5</p>
+            </div>
+            <div className="ocenka-5">
+              <p className="ocenka-text">5</p>
+            </div>
+          </div>
         </div>
-        <div
-          className="blok-ychitela"
-          onClick={() => {
-            window.location.assign("ychitela");
-          }}
-        >
-          <p className="ychitela-text">Учителя</p>
+        <div className="ocenki-row">
+          <div className="ocenki-predmet">
+            <p className="ocenki-predmet-text">Предмет</p>
+          </div>
+          <div className="ocenki-sredbal-4">
+            <p className="ocenki-sredbal-text">4.00</p>
+          </div>
+          <div className="ocenki-mass">
+            <div className="ocenka-4">
+              <p className="ocenka-text">4</p>
+            </div>
+            <div className="ocenka-4">
+              <p className="ocenka-text">4</p>
+            </div>
+            <div className="ocenka-4">
+              <p className="ocenka-text">4</p>
+            </div>
+          </div>
         </div>
+        <div className="ocenki-row">
+          <div className="ocenki-predmet">
+            <p className="ocenki-predmet-text">Предмет</p>
+          </div>
+          <div className="ocenki-sredbal-3">
+            <p className="ocenki-sredbal-text">3.00</p>
+          </div>
+          <div className="ocenki-mass">
+            <div className="ocenka-3">
+              <p className="ocenka-text">3</p>
+            </div>
+            <div className="ocenka-3">
+              <p className="ocenka-text">3</p>
+            </div>
+            <div className="ocenka-3">
+              <p className="ocenka-text">3</p>
+            </div>
+          </div>
+        </div>
+        <div className="ocenki-row">
+          <div className="ocenki-predmet">
+            <p className="ocenki-predmet-text">Предмет</p>
+          </div>
+          <div className="ocenki-sredbal-2">
+            <p className="ocenki-sredbal-text">2.00</p>
+          </div>
+          <div className="ocenki-mass">
+            <div className="ocenka-2">
+              <p className="ocenka-text">2</p>
+            </div>
+            <div className="ocenka-2">
+              <p className="ocenka-text">2</p>
+            </div>
+            <div className="ocenka-2">
+              <p className="ocenka-text">2</p>
+            </div>
+          </div>
+        </div>
+        <div className="ocenki-row">
+          <div className="ocenki-predmet">
+            <p className="ocenki-predmet-text">Предмет</p>
+          </div>
+          <div className="ocenki-sredbal-1">
+            <p className="ocenki-sredbal-text">1.00</p>
+          </div>
+          <div className="ocenki-mass">
+            <div className="ocenka-1">
+              <p className="ocenka-text">1</p>
+            </div>
+            <div className="ocenka-1">
+              <p className="ocenka-text">1</p>
+            </div>
+            <div className="ocenka-1">
+              <p className="ocenka-text">1</p>
+            </div>
+          </div>
+        </div>
+        <div className="ocenki-row">
+          <div className="ocenki-predmet">
+            <p className="ocenki-predmet-text">Предмет</p>
+          </div>
+          <div className="ocenki-sredbal-5">
+            <p className="ocenki-sredbal-text">0.00</p>
+          </div>
+          <div className="ocenki-mass">
+
+          </div>
+        </div>
+        <div className="ocenki-row">
+          <div className="ocenki-predmet">
+            <p className="ocenki-predmet-text">Предмет</p>
+          </div>
+          <div className="ocenki-sredbal-5">
+            <p className="ocenki-sredbal-text">0.00</p>
+          </div>
+          <div className="ocenki-mass">
+
+          </div>
+        </div>
+        <div className="ocenki-row">
+          <div className="ocenki-predmet">
+            <p className="ocenki-predmet-text">Предмет</p>
+          </div>
+          <div className="ocenki-sredbal-5">
+            <p className="ocenki-sredbal-text">0.00</p>
+          </div>
+          <div className="ocenki-mass">
+
+          </div>
+        </div>
+        <div className="ocenki-row">
+          <div className="ocenki-predmet">
+            <p className="ocenki-predmet-text">Предмет</p>
+          </div>
+          <div className="ocenki-sredbal-5">
+            <p className="ocenki-sredbal-text">0.00</p>
+          </div>
+          <div className="ocenki-mass">
+
+          </div>
+        </div>
+        <div className="ocenki-row">
+          <div className="ocenki-predmet">
+            <p className="ocenki-predmet-text">Предмет</p>
+          </div>
+          <div className="ocenki-sredbal-5">
+            <p className="ocenki-sredbal-text">0.00</p>
+          </div>
+          <div className="ocenki-mass">
+
+          </div>
+        </div>
+        <div className="ocenki-row">
+          <div className="ocenki-predmet">
+            <p className="ocenki-predmet-text">Предмет</p>
+          </div>
+          <div className="ocenki-sredbal-5">
+            <p className="ocenki-sredbal-text">0.00</p>
+          </div>
+          <div className="ocenki-mass">
+
+          </div>
+        </div>
+        <div className="ocenki-row">
+          <div className="ocenki-predmet">
+            <p className="ocenki-predmet-text">Предмет</p>
+          </div>
+          <div className="ocenki-sredbal-5">
+            <p className="ocenki-sredbal-text">0.00</p>
+          </div>
+          <div className="ocenki-mass">
+
+          </div>
+        </div>
+        <div className="ocenki-row">
+          <div className="ocenki-predmet">
+            <p className="ocenki-predmet-text">Предмет</p>
+          </div>
+          <div className="ocenki-sredbal-5">
+            <p className="ocenki-sredbal-text">0.00</p>
+          </div>
+          <div className="ocenki-mass">
+
+          </div>
+        </div>
+        <div className="ocenki-row">
+          <div className="ocenki-predmet">
+            <p className="ocenki-predmet-text">Предмет</p>
+          </div>
+          <div className="ocenki-sredbal-5">
+            <p className="ocenki-sredbal-text">0.00</p>
+          </div>
+          <div className="ocenki-mass">
+
+          </div>
+        </div>
+        <div className="ocenki-row">
+          <div className="ocenki-predmet">
+            <p className="ocenki-predmet-text">Предмет</p>
+          </div>
+          <div className="ocenki-sredbal-5">
+            <p className="ocenki-sredbal-text">0.00</p>
+          </div>
+          <div className="ocenki-mass">
+
+          </div>
+        </div>
+        <div className="ocenki-row">
+          <div className="ocenki-predmet">
+            <p className="ocenki-predmet-text">Предмет</p>
+          </div>
+          <div className="ocenki-sredbal-5">
+            <p className="ocenki-sredbal-text">0.00</p>
+          </div>
+          <div className="ocenki-mass">
+
+          </div>
+        </div>
+
+
+
       </div>
     </>
   );

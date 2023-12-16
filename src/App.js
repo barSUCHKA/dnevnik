@@ -96,7 +96,6 @@ function App() {
           </button>
           <button
             className="vhod"
-            to="main"
             style={{
               display: vhod_btn,
             }}

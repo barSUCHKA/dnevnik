@@ -5,14 +5,20 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes, } from 'react-router-dom';
 import { MainPage } from './components/mainPage';
+import { OcenkiPage } from './components/ocenkiPage';
+import { DomzadraspPage } from './components/domzadraspPage';
+import { YchitelaPage } from './components/ychitelaPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
         <Routes>
-          <Route path='main' element={<MainPage />}/>
           <Route path='/' element={<App />}/>
+          <Route path='main' element={<MainPage />}/>
+          <Route path='ocenki' element={<OcenkiPage />}/>
+          <Route path='domzadrasp' element={<DomzadraspPage />}/>
+          <Route path='ychitela' element={<YchitelaPage />}/>
         </Routes>
       </BrowserRouter>
   </React.StrictMode>

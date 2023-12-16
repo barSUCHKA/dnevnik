@@ -4,7 +4,21 @@ body {
   display: flex;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #ffffff;
-  overflow: hidden;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 10px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0); /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #333333 0%, #555555 100%);
+  border-radius: 6.5px;
+  border: 0;
 }
 
 .ellipse-9 {
@@ -175,11 +189,11 @@ header {
   display: flex;
   flex-direction: row;
   margin: auto 0 0 55px;
-  cursor: pointer;
 }
 
 .chel-icon {
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .name-login {
@@ -190,6 +204,7 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  cursor: pointer;
 }
 
 .el-dnevnik-title {
@@ -237,4 +252,262 @@ header {
 .nastroiki-icon {
   margin: auto 0 auto 10px;
   cursor: pointer;
+}
+
+.bloki {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  margin: 51px;
+}
+
+.blok-ocenki,
+.blok-domzadrasp,
+.blok-ychitela {
+  width: 400px;
+  height: 250px;
+  background-color: #3f3f3ffa;
+  border-radius: 27px;
+  margin-right: 36px;
+  cursor: pointer;
+}
+
+.ocenki-text,
+.ychitela-text {
+  color: #fff;
+  text-align: right;
+  font-family: Calibri;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 20px;
+}
+
+.domzadrasp-text {
+  color: #fff;
+  text-align: right;
+  font-family: Calibri;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 20px;
+}
+
+.ocenki-settings {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+.tekycie-itogovie {
+  display: flex;
+  flex-direction: row;
+  background-color: #d9d9d9;
+  width: 200px;
+  height: 40px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-right: 35px;
+}
+
+.tekycie,
+.itogovie {
+  display: flex;
+  width: 100px;
+  height: 40px;
+}
+
+.tekycie-text,
+.itogovie-text {
+  color: #000;
+  text-align: center;
+  font-family: Calibri;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: auto;
+}
+
+.tekycie /*-itogovie-select*/ {
+  border-radius: 25px;
+  background-color: #14ff00;
+  width: 100px;
+  height: 40px;
+}
+
+.tekycie-text /*-itogovie-select*/ {
+  font-weight: bold;
+}
+
+.ocenki-data {
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #d9d9d9;
+  cursor: pointer;
+}
+
+.ocenki-data option {
+  color: #000;
+  text-align: center;
+  font-family: Calibri;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.ocenki-main {
+  width: 100vw;
+  height: 100vh;
+}
+
+.ocenki-row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3px;
+  height: 50px;
+}
+
+.ocenki-predmet {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  background-color: #3f3f3ffa;
+  border-radius: 7px;
+}
+
+.ocenki-predmet-text {
+  color: #fff;
+  text-align: center;
+  font-family: Calibri;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: auto;
+}
+
+.ocenki-sredbal-5 {
+  display: flex;
+  width: 50px;
+  height: 40px;
+  background-color: #14ff00;
+  border-radius: 3px;
+  margin: auto 13px;
+}
+
+.ocenki-sredbal-4 {
+  display: flex;
+  width: 50px;
+  height: 40px;
+  background-color: #d3ff71;
+  border-radius: 3px;
+  margin: auto 13px;
+}
+
+.ocenki-sredbal-3 {
+  display: flex;
+  width: 50px;
+  height: 40px;
+  background-color: #ffff26;
+  border-radius: 3px;
+  margin: auto 13px;
+}
+
+.ocenki-sredbal-2 {
+  display: flex;
+  width: 50px;
+  height: 40px;
+  background-color: #ff6f62;
+  border-radius: 3px;
+  margin: auto 13px;
+}
+
+.ocenki-sredbal-1 {
+  display: flex;
+  width: 50px;
+  height: 40px;
+  background-color: #ff4c3c;
+  border-radius: 3px;
+  margin: auto 13px;
+}
+
+.ocenki-sredbal-text {
+  color: #000;
+  text-align: center;
+  font-family: Calibri;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: auto;
+}
+
+.ocenki-mass {
+  display: flex;
+  background-color: #3f3f3ffa;
+  width: calc(100vw - 276px);
+  border-radius: 7px;
+}
+
+.ocenka-5 {
+  display: flex;
+  width: 30px;
+  height: 40px;
+  background-color: #14ff00;
+  border-radius: 3px;
+  margin: auto 0 auto 7px;
+}
+
+.ocenka-4 {
+  display: flex;
+  width: 30px;
+  height: 40px;
+  background-color: #d3ff71;
+  border-radius: 3px;
+  margin: auto 0 auto 7px;
+}
+
+.ocenka-3 {
+  display: flex;
+  width: 30px;
+  height: 40px;
+  background-color: #ffff26;
+  border-radius: 3px;
+  margin: auto 0 auto 7px;
+}
+
+.ocenka-2 {
+  display: flex;
+  width: 30px;
+  height: 40px;
+  background-color: #ff6f62;
+  border-radius: 3px;
+  margin: auto 0 auto 7px;
+}
+
+.ocenka-1 {
+  display: flex;
+  width: 30px;
+  height: 40px;
+  background-color: #ff4c3c;
+  border-radius: 3px;
+  margin: auto 0 auto 7px;
+}
+
+.ocenka-text {
+  color: #000;
+  text-align: center;
+  font-family: Calibri;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: auto;
 }
