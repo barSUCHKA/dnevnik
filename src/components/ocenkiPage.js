@@ -348,9 +348,6 @@ export const OcenkiPage = () => {
 
           </div>
         </div>
-
-
-
       </div>
     </>
   );

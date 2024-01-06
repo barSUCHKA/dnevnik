@@ -347,6 +347,7 @@ header {
   width: 150px;
   height: 40px;
   border-radius: 20px;
+  border: 0;
   background-color: #d9d9d9;
   cursor: pointer;
 }
@@ -436,6 +437,7 @@ header {
   background-color: #ff4c3c;
   border-radius: 3px;
   margin: auto 13px;
+  cursor: pointer;
 }
 
 .ocenki-sredbal-text {
@@ -456,49 +458,46 @@ header {
   border-radius: 7px;
 }
 
+.ocenka-1 {
+  background-color: #ff4c3c;
+}
+
+.ocenka-2 {
+  background-color: #ff6f62;
+}
+
+.ocenka-3 {
+  background-color: #ffff26;
+}
+
+.ocenka-4 {
+  background-color: #d3ff71;
+}
+
+.ocenka-5 {
+  background-color: #14ff00;
+}
+
+.ocenka-1,
+.ocenka-2,
+.ocenka-3,
+.ocenka-4,
 .ocenka-5 {
   display: flex;
   width: 30px;
   height: 40px;
-  background-color: #14ff00;
   border-radius: 3px;
   margin: auto 0 auto 7px;
+  cursor: pointer;
+  transition: transform 0.1s;
 }
 
-.ocenka-4 {
-  display: flex;
-  width: 30px;
-  height: 40px;
-  background-color: #d3ff71;
-  border-radius: 3px;
-  margin: auto 0 auto 7px;
-}
-
-.ocenka-3 {
-  display: flex;
-  width: 30px;
-  height: 40px;
-  background-color: #ffff26;
-  border-radius: 3px;
-  margin: auto 0 auto 7px;
-}
-
-.ocenka-2 {
-  display: flex;
-  width: 30px;
-  height: 40px;
-  background-color: #ff6f62;
-  border-radius: 3px;
-  margin: auto 0 auto 7px;
-}
-
-.ocenka-1 {
-  display: flex;
-  width: 30px;
-  height: 40px;
-  background-color: #ff4c3c;
-  border-radius: 3px;
-  margin: auto 0 auto 7px;
+.ocenka-1:hover,
+.ocenka-2:hover,
+.ocenka-3:hover,
+.ocenka-4:hover,
+.ocenka-5:hover {
+  transform: scale(1.2);
 }
 
 .ocenka-text {
@@ -511,3 +510,39 @@ header {
   line-height: normal;
   margin: auto;
 }
+
+.domzadrasp-data {
+  width: 175px;
+  height: 40px;
+  border-radius: 20px;
+  border: 0;
+  margin: 20px;
+}
+
+.domzadrasp-main {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+}
+
+.domzadrasp-ponedelnik {
+  width: 850px;
+  height: 500px;
+}
+
+.domzadrasp-ponedelnik-text,
+.domzadrasp-vtornik-text,
+.domzadrasp-sreda-text,
+.domzadrasp-chetverg-text,
+.domzadrasp-patnica-text,
+.domzadrasp-subota-text {
+  width: 850px;
+  margin: 0 0 20px;
+  color: #fff;
+  font-family: Calibri;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
