@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Domzadraspblock from "./blocks/domzadrasp";
 
 export const DomzadraspPage = () => {
   return (
@@ -127,92 +128,14 @@ export const DomzadraspPage = () => {
       />
       <div className="domzadrasp-main">
         <div className="domzadrasp-column1">
-          <div className="domzadrasp-ponedelnik">
-            <p className="domzadrasp-ponedelnik-text">Понедельник</p>
-            <div className="domzadrasp-predmeti">
-              <div className="domzadrasp-predmet-row">
-                <div className="domzadrasp-predmet">
-                  <p className="domzadrasp-predmet-text">Предмет</p>
-                </div>
-                <div className="domzadrasp-zadanie">
-                  <p className="domzadrasp-zadanie-text">Задание</p>
-                </div>
-              </div>
-              <div className="domzadrasp-predmet-row">
-                <div className="domzadrasp-predmet">
-                  <p className="domzadrasp-predmet-text">Предмет</p>
-                </div>
-                <div className="domzadrasp-zadanie">
-                  <p className="domzadrasp-zadanie-text">Задание</p>
-                </div>
-              </div>
-              <div className="domzadrasp-predmet-row">
-                <div className="domzadrasp-predmet">
-                  <p className="domzadrasp-predmet-text">Предмет</p>
-                </div>
-                <div className="domzadrasp-zadanie">
-                  <p className="domzadrasp-zadanie-text">Задание</p>
-                </div>
-              </div>
-              <div className="domzadrasp-predmet-row">
-                <div className="domzadrasp-predmet">
-                  <p className="domzadrasp-predmet-text">Предмет</p>
-                </div>
-                <div className="domzadrasp-zadanie">
-                  <p className="domzadrasp-zadanie-text">Задание</p>
-                </div>
-              </div>
-              <div className="domzadrasp-predmet-row">
-                <div className="domzadrasp-predmet">
-                  <p className="domzadrasp-predmet-text">Предмет</p>
-                </div>
-                <div className="domzadrasp-zadanie">
-                  <p className="domzadrasp-zadanie-text">Задание</p>
-                </div>
-              </div>
-              <div className="domzadrasp-predmet-row">
-                <div className="domzadrasp-predmet">
-                  <p className="domzadrasp-predmet-text">Предмет</p>
-                </div>
-                <div className="domzadrasp-zadanie">
-                  <p className="domzadrasp-zadanie-text">Задание</p>
-                </div>
-              </div>
-              <div className="domzadrasp-predmet-row">
-                <div className="domzadrasp-predmet">
-                  <p className="domzadrasp-predmet-text">Предмет</p>
-                </div>
-                <div className="domzadrasp-zadanie">
-                  <p className="domzadrasp-zadanie-text">Задание</p>
-                </div>
-              </div>
-              <div className="domzadrasp-predmet-row">
-                <div className="domzadrasp-predmet">
-                  <p className="domzadrasp-predmet-text">Предмет</p>
-                </div>
-                <div className="domzadrasp-zadanie">
-                  <p className="domzadrasp-zadanie-text">Задание</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="domzadrasp-vtornik">
-            <p className="domzadrasp-vtornik-text">Вторник</p>
-          </div>
-          <div className="domzadrasp-sreda">
-            <p className="domzadrasp-sreda-text">Среда</p>
-          </div>
+        <Domzadraspblock den="Понедельник"/>
+        <Domzadraspblock den="Вторник" />
+        <Domzadraspblock den="Среда" />
         </div>
         <div className="domzadrasp-column2">
-          <div className="domzadrasp-chetverg">
-            <p className="domzadrasp-chetverg-text">Четверг</p>
-          </div>
-          <div className="domzadrasp-patnica">
-            <p className="domzadrasp-patnica-text">Пятница</p>
-          </div>
-          <div className="domzadrasp-subota">
-            <p className="domzadrasp-subota-text">Суббота</p>
-          </div>
+        <Domzadraspblock den="Четверг" />
+        <Domzadraspblock den="Пятница" />
+        <Domzadraspblock den="Суббота" />
         </div>
       </div>
     </>

@@ -132,7 +132,7 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer;
   width: 250px;
   height: 50px;
-  border-radius: 25.5px;
+  border-radius: 20px;
   border: 0;
   background-color: #15ff00;
   color: #ffffff;
@@ -150,7 +150,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .login {
   width: 300px;
   height: 50px;
-  border-radius: 25.5px;
+  border-radius: 20px;
   border: 0;
   font-size: 16px;
   cursor: pointer;
@@ -162,10 +162,14 @@ input[type="number"]::-webkit-inner-spin-button {
   padding: 0;
 }
 
+.login:focus {
+  outline: none;
+}
+
 .parol {
   width: 300px;
   height: 50px;
-  border-radius: 25.5px;
+  border-radius: 20px;
   border: 0;
   font-size: 16px;
   cursor: pointer;
@@ -271,8 +275,14 @@ header {
   border-radius: 27px;
   margin-right: 36px;
   cursor: pointer;
+  transition: transform .1s;
 }
 
+.blok-ocenki:hover,
+.blok-domzadrasp:hover,
+.blok-ychitela:hover{
+  transform: scale(1.05);
+}
 .ocenki-text,
 .ychitela-text {
   color: #fff;
@@ -523,19 +533,10 @@ header {
   flex-wrap: wrap;
   display: flex;
   flex-direction: row;
+  height: 100vh;
 }
 
-.domzadrasp-ponedelnik {
-  width: 850px;
-  height: 500px;
-}
-
-.domzadrasp-ponedelnik-text,
-.domzadrasp-vtornik-text,
-.domzadrasp-sreda-text,
-.domzadrasp-chetverg-text,
-.domzadrasp-patnica-text,
-.domzadrasp-subota-text {
+.domzadrasp-den-text {
   width: 850px;
   margin: 0 0 20px;
   color: #fff;
@@ -545,4 +546,116 @@ header {
   font-weight: 400;
   line-height: normal;
 }
+
+.domzadrasp-predmet-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.domzadrasp-den {
+  margin: 0 30px;
+  width: 850px;
+  height: 500px;
+}
+
+.domzadrasp-predmet-first {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3f3f3f;
+  border-radius: 27px 0 0 0;
+  margin: 1px;
+}
+
+.domzadrasp-predmet {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3f3f3f;
+  margin: 1px;
+}
+
+.domzadrasp-predmet-last {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3f3f3f;
+  border-radius: 0 0 0 27px;
+  margin: 1px;
+}
+
+.domzadrasp-predmet-text {
+  margin: auto 0 auto 0;
+  text-align: center;
+  color: #fff;
+  font-family: Calibri;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  word-wrap: break-word;
+}
+
+.domzadrasp-zadanie-first {
+  width: 646px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: #3f3f3f;
+  border-radius: 0 27px 0 0;
+  margin: 1px;
+}
+
+.domzadrasp-zadanie {
+  width: 646px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: #3f3f3f;
+  margin: 1px;
+}
+
+.domzadrasp-zadanie-last {
+  width: 646px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: #3f3f3f;
+  border-radius: 0 0 27px 0;
+  margin: 1px;
+}
+
+.domzadrasp-zadanie-text {
+  margin: 0 20px 0 20px;
+  color: #fff;
+  font-family: Calibri;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  word-wrap: break-word;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
